@@ -57,7 +57,7 @@ export const BottomModal = ({
                   flexDirection: 'row',
                 }}
               >
-                <Text style={{ marginRight: 12 }}>
+                <Text style={styles.mainTemperature}>
                   {Math.round(elem.main.temp_max)}°
                 </Text>
                 <Text>{Math.round(elem.main.temp_min)}°</Text>
@@ -86,4 +86,5 @@ const styles = StyleSheet.create({
   humidityContainer: { flexDirection: 'row', alignItems: 'center' },
   imageHumidity: { height: 16, width: 16 },
   weatherIcon: { height: 42, width: 42 },
+  mainTemperature: { marginRight: 12 },
 });

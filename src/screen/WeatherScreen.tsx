@@ -32,7 +32,7 @@ export const WeatherScreen = () => {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={styles.wrapper}>
       <View style={styles.container}>
         {currentDay ? (
           <CurrentDay day={currentDay} city={allData.currentCity} />
@@ -51,6 +51,7 @@ export const WeatherScreen = () => {
 };
 
 const styles = StyleSheet.create({
+  wrapper: { flex: 1 },
   container: {
     flex: 1,
     padding: 24,
